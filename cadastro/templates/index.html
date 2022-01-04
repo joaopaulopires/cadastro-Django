@@ -1,0 +1,42 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TESTE</h1>
+    </br>
+    </br>
+    <details>
+            <summary>
+            Opções
+            </summary>
+        <ul>
+            <li>Teatro</li>
+            <li>Cinema</li>
+            <li>Circo</li>
+            <li>Música</li>
+            <li>Pintura</li>
+            <li>Dança</li>
+        </ul>
+    </details>
+    </br>
+    </br>
+    <label>Curtir</label><br>
+    <meter min="0" max="1000" value="900" low="100" high="700" optimum="850"></meter> <br>
+    <label>Compartilhar</label><br>
+    <meter min="0" max="1000" value="600" low="100" high="700" optimum="850"></meter> <br>
+    <label>Salvar</label><br>
+    <meter min="0" max="1000" value="50" low="100" high="700" optimum="850"></meter> <br>
+</body>
+    </br>
+    </br>
+    <input type="range" min="1" max="100" value="50">
+</html>
