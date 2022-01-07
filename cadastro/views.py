@@ -1,3 +1,6 @@
+#Documentação para Passwords no Django https://docs.djangoproject.com/pt-br/4.0/topics/auth/passwords/
+
+
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Alunos
 from .form import AlunoForm

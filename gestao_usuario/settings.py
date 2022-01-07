@@ -28,10 +28,11 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['gestao-usuario.herokuapp.com']
+ALLOWED_HOSTS = ['gestao-usuario.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
+# documentação do 'bootstrapform' em https://django-bootstrap-form.readthedocs.io/en/latest/
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrapform',
     'cadastro',
     'home',
 ]
@@ -128,6 +130,10 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'lista_aluno'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    'statics',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
