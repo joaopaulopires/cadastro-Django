@@ -9,5 +9,3 @@ Cadastro para centro cultural com o framework Django
 
 Deploy realizado no Heroku
 https://gestao-usuario.herokuapp.com/
-
-###Projeto
