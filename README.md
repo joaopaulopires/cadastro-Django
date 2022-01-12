@@ -9,4 +9,4 @@ Cadastro para centro cultural com o framework Django
   <li>Banco de Dados: SQLite e PostgreSQL
 </ul>
 
-<h3>Implantação realizada no Heroku https://gestao-usuario.herokuapp.com/</h3>
+Deploy realizado no Heroku: https://gestao-usuario.herokuapp.com/
